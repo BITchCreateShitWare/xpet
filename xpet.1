@@ -1,0 +1,42 @@
+.TH XPET 1 "November 2025" "xpet" "User Commands"
+.SH NAME
+xpet: a suckless animated desktop pet for X11 (and wayland)
+
+.SH SYNOPSIS
+.B xpet
+
+.SH DESCRIPTION
+.B xpet
+is a minimal on screen pet inspired by
+.B xneko.
+It shows a small animated character that walks, chases the mouse,
+sleeps, and reacts to clicks or keys.
+
+.SH CONTROLS
+.TP
+.B left click + drag
+move the pet manually
+.TP
+.B right click
+makes the pet happy and shows a phrase
+.TP
+.B key bindings
+toggle chase, freeze, or quit (set in
+.B config.h
+).
+
+.SH CONFIGURATION
+all behavior and assets are defined at compile time in
+.B config.h
+and the
+.B PET_ASSET_DIR
+animation folders
+
+.SH DEPENDENCIES
+Xlib, Xext, Xpm
+
+.SH AUTHOR
+uint, 2025
+
+.SH SEE ALSO
+xneko(1)
