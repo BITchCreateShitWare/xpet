@@ -2,7 +2,7 @@
 
 #include <X11/Xlib.h>
 
-#define VERSION "v0.1"
+#define VERSION "v0.2"
 
 #define N_KEYBINDS 3
 #define ABS(a) ((a) < 0 ? -(a) : (a))
@@ -60,8 +60,9 @@ struct pet {
 	int    target_y;
 	long   wander_wait; /* time to wait at destination */
 
-	/* sleep state */
+	/* idle/sleep state */
 	long   frozen_time; /* time spent frozen */
+	long   unfreeze_delay; /* time after frozen where idle */
 
 	/* happy state */
 	enum state previous_state; /* state before becoming happy */
