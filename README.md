@@ -1,3 +1,8 @@
+# my own version
+- https://gitee.com/eeppee_admin/probe-xpet
+
+
+
 ![](xpet_logo_10x.png)  
 
 #### xpet is a small desktop pet for x11 written in c
